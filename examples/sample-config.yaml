@@ -1,0 +1,28 @@
+# Example Repository Configuration
+# Use this file as a template for creating new repositories
+
+# Required: Repository name
+name: my-awesome-project
+
+# Optional: Repository description
+description: A sample project created with repo-creator
+
+# Optional: Whether the repository is private (default: false)
+private: false
+
+# Optional: Repository topics/tags for discoverability
+topics:
+  - python
+  - automation
+  - github
+
+# Optional: Default branch name (default: main)
+default_branch: main
+
+# Optional: Enable GitHub features
+has_issues: true
+has_wiki: true
+has_projects: true
+
+# Optional: Initialize repository with a README (default: true)
+auto_init: true
