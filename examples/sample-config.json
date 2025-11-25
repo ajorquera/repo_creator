@@ -1,0 +1,15 @@
+{
+  "name": "my-json-project",
+  "description": "A sample project using JSON configuration",
+  "private": false,
+  "topics": [
+    "json",
+    "configuration",
+    "example"
+  ],
+  "default_branch": "main",
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "auto_init": true
+}
