@@ -208,6 +208,21 @@ class GitHubClient:
             json={"names": topics},
         )
 
+    def get_topics(self, owner: str, name: str) -> dict[str, Any]:
+        """Get repository topics.
+
+        Args:
+            owner: Repository owner.
+            name: Repository name.
+
+        Returns:
+            Dictionary with topic names.
+
+        Raises:
+            GitHubError: If getting topics fails.
+        """
+        return self._request("GET", f"/repos/{owner}/{name}/topics")
+
     def delete_repo(self, owner: str, name: str) -> None:
         """Delete a repository.
 

@@ -2,7 +2,6 @@
 
 import pytest
 from unittest.mock import MagicMock, patch
-import os
 
 from repo_creator.github_client import GitHubClient, GitHubError
 

@@ -241,9 +241,7 @@ def export(repo_name: str, owner: str | None, output: str | None, token: str | N
         }
 
         # Get topics
-        topics_data = client._request(
-            "GET", f"/repos/{repo_owner}/{repo_name}/topics"
-        )
+        topics_data = client.get_topics(repo_owner, repo_name)
         if topics_data.get("names"):
             config["topics"] = topics_data["names"]
 
